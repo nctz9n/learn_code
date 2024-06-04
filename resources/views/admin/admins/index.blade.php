@@ -464,7 +464,7 @@
                 </div>
                 <div class="card-footer py-4">
                     <nav class="d-flex justify-content-end" aria-label="...">
-                        {{$users->links()}}
+                        {{$admins->links()}}
 
                     </nav>
                 </div>

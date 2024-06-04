@@ -33,6 +33,8 @@ Route::group(['middleware' => ['auth' ,'admin']], function () {
 
 	Route::resource('admin/users', 'App\Http\Controllers\Admin\UserController', ['except' => ['show']]);
     Route::resource('admin/admins', 'App\Http\Controllers\Admin\AdminController', ['except' => ['show']]);
+    Route::resource('admin/tracks', 'App\Http\Controllers\Admin\TrackController');
+
 
 	Route::get('admin/profile', ['as' => 'profile.edit', 'uses' => 'App\Http\Controllers\Admin\ProfileController@edit']);
 	Route::put('admin/profile', ['as' => 'profile.update', 'uses' => 'App\Http\Controllers\Admin\ProfileController@update']);
